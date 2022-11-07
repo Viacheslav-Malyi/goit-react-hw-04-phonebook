@@ -16,10 +16,6 @@ export const FormContact = ({ onSubmit }) => {
 
   const hanldeSubmit = event => {
     event.preventDefault();
-    const contact = {
-      name,
-      number,
-    };
     onSubmit({ name, number });
 
     setName('');
